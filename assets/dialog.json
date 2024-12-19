@@ -1,0 +1,8 @@
+{
+    "welcome": "Welcome to the Escape Room!",
+    "invalidCommand": "I don't understand that command.",
+    "look": {
+        "lamp": "It's an old oil lamp, covered in dust.",
+        "key": "A small rusty key. It might unlock something."
+    }
+}
