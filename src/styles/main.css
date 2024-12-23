@@ -1,65 +1,66 @@
 body {
-    background-color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-    font-family: "Courier New", Courier, monospace;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #game-container {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #000;
-    border: 2px solid #33ff33;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(51, 255, 51, 0.3);
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000;
+  border: 2px solid #33ff33;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(51, 255, 51, 0.3);
 }
 
 #game-output {
-    min-height: 500px;
-    margin-bottom: 20px;
-    padding: 15px;
-    color: #33ff33;
-    font-size: 16px;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    overflow-y: auto;
+  height: 500px; /* Fixed height instead of min-height */
+  margin-bottom: 20px;
+  padding: 15px;
+  color: #33ff33;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-y: scroll; /* Always show vertical scrollbar */
+  scrollbar-color: #33ff33 #000; /* Themed scrollbar colors */
 }
 
 #input-area {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 #game-input {
-    flex: 1;
-    padding: 10px;
-    background-color: #000;
-    color: #33ff33;
-    border: 1px solid #33ff33;
-    font-family: inherit;
-    font-size: 16px;
+  flex: 1;
+  padding: 10px;
+  background-color: #000;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #submit-command {
-    padding: 10px 20px;
-    background-color: #33ff33;
-    color: #000;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: bold;
-    transition: all 0.2s ease;
+  padding: 10px 20px;
+  background-color: #33ff33;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: all 0.2s ease;
 }
 
 #submit-command:hover {
-    background-color: #66ff66;
+  background-color: #66ff66;
 }

@@ -1,8 +1,32 @@
 {
-    "welcome": "Welcome to the Escape Room!",
-    "invalidCommand": "I don't understand that command.",
-    "look": {
-        "lamp": "It's an old oil lamp, covered in dust.",
-        "key": "A small rusty key. It might unlock something."
+  "welcome": "Welcome to the Escape Room!",
+  "invalidCommand": "I don't understand that command.",
+  "interactions": {
+    "take": {
+      "success": "You pick up the {item}.",
+      "failed": "You can't take that.",
+      "alreadyHave": "You already have the {item}.",
+      "notPortable": "The {item} cannot be picked up."
+    },
+    "examine": {
+      "success": "{description}",
+      "notFound": "You don't see that here."
+    },
+    "open": {
+      "success": "You open the {container}.",
+      "locked": "The {container} is locked.",
+      "alreadyOpen": "The {container} is already open.",
+      "empty": "The {container} is empty.",
+      "contains": "Inside the {container} you find: {items}"
+    },
+    "use": {
+      "success": "You use the {item} on the {target}.",
+      "failed": "That doesn't work.",
+      "wrongItem": "The {item} doesn't work with that."
     }
+  },
+  "look": {
+    "lamp": "It's an old oil lamp, covered in dust.",
+    "key": "A small rusty key. It might unlock something."
+  }
 }

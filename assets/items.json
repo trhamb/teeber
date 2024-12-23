@@ -1,0 +1,50 @@
+{
+  "lamp": {
+    "id": "lamp",
+    "name": "Old Oil Lamp",
+    "description": "An antique oil lamp with intricate brass work.",
+    "portable": true,
+    "usableOn": ["dark_room"],
+    "properties": {
+      "lit": false
+    }
+  },
+  "brass_key": {
+    "id": "brass_key",
+    "name": "Brass Key",
+    "description": "A small brass key with ornate patterns.",
+    "portable": true,
+    "usableOn": ["clock_compartment"],
+    "properties": {
+      "unlocks": "clock_compartment"
+    }
+  },
+  "silver_key": {
+    "id": "silver_key",
+    "name": "Silver Key",
+    "description": "A tarnished silver key with a peculiar shape.",
+    "portable": true,
+    "usableOn": ["secret_door"],
+    "properties": {
+      "unlocks": "secret_door"
+    }
+  },
+  "old_book": {
+    "id": "old_book",
+    "name": "Leather-bound Book",
+    "description": "A weathered book bound in dark leather.",
+    "portable": true,
+    "readable": true,
+    "readText": "The pages contain mysterious symbols and diagrams."
+  },
+  "dusty_coat": {
+    "id": "dusty_coat",
+    "name": "Dusty Coat",
+    "description": "A heavy wool coat covered in years of dust.",
+    "portable": true,
+    "properties": {
+      "searchable": true,
+      "pockets": ["old_letter"]
+    }
+  }
+}

@@ -1,23 +1,107 @@
 [
-    {
-        "id": "room1",
-        "name": "Entrance Hall",
-        "description": "You are standing in the grand entrance hall. There is a door to the north.",
-        "exits": { "north": "room2", "east": "room3" },
+  {
+    "id": "room1",
+    "name": "Entrance Hall",
+    "description": "You are standing in the grand entrance hall. Sunlight streams through dusty windows.",
+    "exits": { "north": "room2", "east": "room3" },
+    "standardFeatures": {
+      "floor": {
+        "id": "floor",
+        "name": "Floor",
+        "description": "The marble floor is cracked and worn, with years of footsteps etched into its surface.",
         "items": ["lamp"]
+      },
+      "walls": {
+        "id": "walls",
+        "name": "Walls",
+        "description": "Faded wallpaper peels from the walls, revealing glimpses of ancient plaster beneath."
+      },
+      "ceiling": {
+        "id": "ceiling",
+        "name": "Ceiling",
+        "description": "The high ceiling disappears into shadows above."
+      }
     },
-    {
-        "id": "room2",
-        "name": "Library",
-        "description": "A dusty old library with shelves full of books. There's a door to the south.",
-        "exits": { "south": "room1" },
-        "items": ["key"]
+    "interactables": [
+      {
+        "id": "grandfather_clock",
+        "name": "Grandfather Clock",
+        "description": "A towering grandfather clock, its pendulum frozen in time.",
+        "containers": [
+          {
+            "id": "clock_compartment",
+            "name": "Clock Compartment",
+            "description": "A small door on the clock's face",
+            "locked": true,
+            "lockId": "brass_key",
+            "items": ["silver_key"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "room2",
+    "name": "Library",
+    "description": "A dusty old library with shelves full of books.",
+    "exits": { "south": "room1" },
+    "standardFeatures": {
+      "floor": {
+        "id": "floor",
+        "name": "Floor",
+        "description": "The wooden floorboards creak beneath your feet, worn smooth by countless footsteps.",
+        "items": ["old_book"]
+      },
+      "walls": {
+        "id": "walls",
+        "name": "Walls",
+        "description": "Floor-to-ceiling bookshelves line every wall, packed with leather-bound volumes."
+      },
+      "ceiling": {
+        "id": "ceiling",
+        "name": "Ceiling",
+        "description": "A brass chandelier hangs from ornate ceiling roses."
+      }
     },
-    {
-        "id": "room3",
-        "name": "Kitchen",
-        "description": "A dingy kitchen with a broken stove. Looking at the utensils and cutlery strewn across the counters and floor, it looks like people were in a rush to leave...",
-        "exits": { "west": "room1" },
-        "items": ["Butcher's Cleaver", "Broken Saucepan", "Torn Cooking Apron"]
+    "interactables": [
+      {
+        "id": "writing_desk",
+        "name": "Writing Desk",
+        "description": "A mahogany writing desk with several drawers.",
+        "containers": [
+          {
+            "id": "desk_drawer",
+            "name": "Desk Drawer",
+            "description": "A drawer with a brass handle",
+            "locked": false,
+            "items": ["brass_key"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "room3",
+    "name": "Kitchen",
+    "description": "A dingy kitchen with a broken stove. Looking at the utensils and cutlery strewn across the counters and floor, it looks like people were in a rush to leave...",
+    "exits": { "west": "room1" },
+    "standardFeatures": {
+      "floor": {
+        "id": "floor",
+        "name": "Floor",
+        "description": "The stone floor is stained and scattered with broken crockery.",
+        "items": ["butchers_cleaver", "broken_saucepan", "torn_apron"]
+      },
+      "walls": {
+        "id": "walls",
+        "name": "Walls",
+        "description": "Copper pots and pans hang from hooks on the walls, some badly tarnished."
+      },
+      "ceiling": {
+        "id": "ceiling",
+        "name": "Ceiling",
+        "description": "Blackened beams cross the ceiling, smoke-stained from years of cooking fires."
+      }
     }
+  }
 ]
