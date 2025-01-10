@@ -1,8 +1,8 @@
 [
     {
         "id": "room1",
-        "name": "Entrance Hall",
-        "description": "You are standing in the grand entrance hall. Sunlight streams through dusty windows.",
+        "name": "Lobby",
+        "description": "You are facing North in the lobby of what seems to be a run down Manor House. Sunlight peeks through a dust covered window on the west wall. On the east wall - next to a heavy looking door - is a Grandfather Clock that is no longer working. ",
         "exits": { "north": "room2", "east": "room3" },
         "doors": [
             {
